@@ -6,9 +6,12 @@
 
 ## URLs del Proyecto
 
+- **Producción Cloudflare Pages**: https://isoguard-audit.pages.dev
+- **Despliegue Actual**: https://bd75f539.isoguard-audit.pages.dev
 - **Desarrollo Local**: https://3000-imag6iekhml3r2pdp412w-5185f4aa.sandbox.novita.ai
 - **API Base**: `/api`
 - **Repositorio GitHub**: (Pendiente configuración)
+- **Cloudflare Dashboard**: https://dash.cloudflare.com/
 
 ## Características Implementadas ✅
 
@@ -147,6 +150,26 @@ La aplicación incluye datos de demostración:
 - **Deployment**: Cloudflare Pages
 - **Runtime**: Cloudflare Workers (edge computing)
 
+## Configuración Post-Despliegue en Cloudflare
+
+**⚠️ IMPORTANTE**: Después del primer despliegue, necesitas vincular la base de datos D1 manualmente:
+
+1. **Accede al Dashboard de Cloudflare**: https://dash.cloudflare.com/
+2. Ve a **Workers & Pages** → **isoguard-audit**
+3. Click en **Settings** → **Functions**
+4. En **D1 database bindings**, añade:
+   - Variable name: `DB`
+   - D1 database: `isoguard-audit-production`
+5. Click **Save** y redespliega si es necesario
+
+### Información de la Base de Datos D1
+
+- **Nombre**: isoguard-audit-production
+- **Database ID**: 96769fe0-3fcc-464b-9b3b-29ce0099ab5f
+- **Región**: ENAM (Eastern North America)
+- **Binding**: DB
+- **Estado**: ✅ Migrado y poblado con datos de prueba
+
 ## Instalación y Desarrollo
 
 ### Prerrequisitos
@@ -197,6 +220,9 @@ curl http://localhost:3000/api/dashboard/stats
 - ✅ Catálogo de controles ISO 27001:2022
 - ✅ Interfaz de usuario responsive
 - ✅ Integración con Cloudflare D1
+- ✅ Base de datos D1 de producción creada y migrada
+- ✅ Proyecto Cloudflare Pages creado y desplegado
+- ✅ Datos de prueba cargados en producción
 
 ### Pendiente 🚧
 - 🚧 Implementación real de carga de archivos (actualmente mock UI)
