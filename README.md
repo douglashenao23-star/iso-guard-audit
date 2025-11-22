@@ -1,17 +1,22 @@
 # IsoGuard Audit - Asistente Inteligente ISO 27001:2022
 
-## Descripción General
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-orange?logo=cloudflare)](https://isoguard-audit.pages.dev)
+[![ISO 27001:2022](https://img.shields.io/badge/ISO-27001%3A2022-blue)](https://www.iso.org/standard/27001)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Built with Hono](https://img.shields.io/badge/Built%20with-Hono-orange)](https://hono.dev/)
+
+## 🎯 Descripción General
 
 **IsoGuard Audit** es un asistente inteligente para auditorías internas ISO 27001:2022 que permite gestionar auditorías, documentos, hallazgos y controles de seguridad de manera eficiente. La aplicación proporciona análisis automatizados y genera informes interactivos con insights sobre el cumplimiento normativo.
 
-## URLs del Proyecto
+Desplegada en **Cloudflare Pages** con **Cloudflare D1** como base de datos distribuida globalmente.
 
-- **Producción Cloudflare Pages**: https://isoguard-audit.pages.dev
-- **Despliegue Actual**: https://bd75f539.isoguard-audit.pages.dev
-- **Desarrollo Local**: https://3000-imag6iekhml3r2pdp412w-5185f4aa.sandbox.novita.ai
-- **API Base**: `/api`
-- **Repositorio GitHub**: (Pendiente configuración)
-- **Cloudflare Dashboard**: https://dash.cloudflare.com/
+## 🌐 URLs del Proyecto
+
+- **🚀 Producción**: https://isoguard-audit.pages.dev
+- **📦 Repositorio**: https://github.com/douglashenao23-star/iso-guard-audit
+- **📊 Dashboard Cloudflare**: https://dash.cloudflare.com/
+- **📖 API Docs**: `/api/*`
 
 ## Características Implementadas ✅
 
