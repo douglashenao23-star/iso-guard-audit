@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "webapp",
+  "name": "isoguard-audit",
   "compatibility_date": "2025-11-22",
   "pages_build_output_dir": "./dist",
   "compatibility_flags": [
@@ -9,8 +9,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "webapp-production",
-      "database_id": "local-db-for-development"
+      "database_name": "isoguard-audit-production",
+      "database_id": "96769fe0-3fcc-464b-9b3b-29ce0099ab5f"
     }
   ]
 }
